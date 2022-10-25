@@ -101,9 +101,61 @@
 
 /*---------------------------- 240sx grids ----------------------------*/
 
-.sx-grid {
+.sx-photo-grid {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 20px;
+}
+
+.sx-parent-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+
+  max-width: 1000px;
+  padding: 0 5px;
+
+  margin-top: 3rem;
+  border-radius: 50px;
+}
+
+.sx-photo-div {
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 15px;
+
+  width: 500px;
+  
+  border-radius: 50px;
+}
+
+.sx-photo-div:hover {
+  transition-duration: 0.5s;
+  transform: scale(1.03);
+}
+
+.sx-photo-div:not(:hover) {
+  transition-duration: 0.5s;
+  transform: scale(1);
+}
+
+.sx-div-with-img-and-li {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  
+  margin: 2rem;
+  width: 460px;
+}
+
+.sx-div-with-img-and-li ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem 0 2rem;
 }
 
 /*------------------------------ header ------------------------------*/
@@ -181,4 +233,9 @@
   width: 450px;
   height: 200px;
   background-color: purple;
+}
+
+.car-names{
+  display: flex;
+  align-items: center;
 }
